@@ -1,8 +1,11 @@
 import React from "react";
 import TopBar from "./Components/TopBar";
 import "./App.css";
-
+import RecentDonations from "./Components/RecentDonations";
+import Progress from "./Components/Progress";
+import DonationForm from "./Components/DonationForm";
 const targetAmount = 1000;
+
 const donations = [
   {
     amount: 250,
@@ -41,11 +44,18 @@ function App() {
     <>
       <TopBar />
       <main className="container">
-        <section className="sidebar">{/* Recent Donations */}</section>
-        <section className="">
-          {/* Progress */}
-          {/* Donation Form */}
+        <section className="sidebar">
+          <RecentDonations />
         </section>
+        <section className="">
+     <Progress />
+        
+        </section>
+
+        <section>
+        {/* <DonationForm /> */}
+        </section>
+
       </main>
     </>
   );
