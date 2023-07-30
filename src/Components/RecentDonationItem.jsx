@@ -1,13 +1,12 @@
-const RecentDonationItem = ({productToRender})=>{
+const RecentDonationItem = ({donationsFromApp})=>{
     return(
         <>
-        <div>
-            {productToRender.name} donated ${productToRender.amount}
-            <br/>
-            {productToRender.caption}
-           
-        </div>
-        <br/>
+        <li>
+            <span>
+            {donationsFromApp.name} donated ${donationsFromApp.amount}
+            </span>
+            {donationsFromApp.caption}
+        </li>
         </>
     )
 }
