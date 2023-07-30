@@ -1,11 +1,6 @@
-{/* <Progress targetAmountFromApp={targetAmount}/> */}
-// donationsFromApp={donations}
-
 function Progress(props){
  let amounts = props.donationsFromApp
 let Number = amounts.map((item)=> item.amount).reduce((a,b)=>a+b)
-
-
 
   return(
     <>

@@ -1,5 +1,4 @@
 function DonationForm({donationsFromApp}) {
-  //  let CouldBe = (donations.length + 1)
  let length = donationsFromApp.length
   return (
 

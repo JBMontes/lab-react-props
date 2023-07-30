@@ -9,13 +9,9 @@ function RecentDonations({donationsFromApp}) {
     {donationsFromApp.map((item) => {return <RecentDonationItem donationsFromApp={item}/>})}
   </ul>
 </section>
-  )
-  }
+  );
+}
+
   export default RecentDonations
   
   
-  {/* <div>
-    <h2> Recent Donations</h2> 
-    {donationsFromApp.map((item)=> {return <RecentDonationItem key={item.name} productToRender={item}/>})}
-  </div>
-     */}

@@ -38,10 +38,6 @@ const donations = [
     name: "Sam",
   },
 ];
-
-
-
-
 function App() {
   return (
     <>
